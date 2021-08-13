@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:695px)" href="phone1.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('https://images.pexels.com/photos/1796730/pexels-photo-1796730.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.heading{
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+/* Projects Section */
+#projects{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#projects h1{
+    margin: 60px;
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: lightblue;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box li{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.box a{
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 100%;
+}
+#about h1{
+    color: black;
+    margin: 55px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about img{
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+}
+.name{
+    padding: 10px;
+}
+.name h2{
+    font-size: 2rem;
+}
+.name p{
+    font-size: 1.2rem;
+    border: 5px solid #8b2;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/* Links Section */
+#links{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 100px;
+    height: 100%;
+}
+
+#links h1{
+    color: black;
+    margin: 55px;
+    font-family: "OCR A Std";
+}
+#links h2.Github{
+    color: black;
+    margin: 30px;
+    border: 5px solid;
+    border-radius: 25px;
+    border-color:greenyellow;
+    padding: 20px;
+}
+#links h2.Linkedin{
+    color: black;
+    margin: 30px;
+    border: 5px solid;
+    border-radius: 25px;
+    border-color: blue;
+    padding: 20px;
+}
+#links h2.Email{
+    color: black;
+    margin: 30px;
+    border: 5px solid;
+    border-radius: 25px;
+    border-color: black;
+    padding: 20px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="heading">HI, I AM</h1>
+        <h1 class="heading">Adam Kowalchyk</h1>
+        <br><br>
+        <p>And this is my Personal website</p>
+    </section>
+</section>
+<section id="about">
+    <h1 class="heading">About me</h1>
+    <div class="about">
+        <img src="https://media-exp1.licdn.com/dms/image/C5603AQFa7Ed74kp8Zw/profile-displayphoto-shrink_400_400/0/1603407668280?e=1634169600&v=beta&t=XyDVfFm9nz706VJto24cqeZlGDDb_FoX6YOb2HMfLSk" alt="My Pic">
+        <div class="name">
+            <p>Hello, my name is Adam Kowalchyk. I am currently a junior at Gonzaga University studying computer science. My current goal is to obtain an internship in the Greater Seattle Area for Summer 2022. After not being able to obtain an internship for Summer 2021, I made it my main goal to obtain one this upcoming summer. In order to do so, I have been working on multiple side projects to boost my resume, all while working a part time job to help pay for college. Some of my passions in the computer science field include data science, web developement, software engineering, and artificial intelligence.  My greatest passion, however, is sports. Playing competitive sports throughout my whole life, I have developed a strong leadership presence as well as a fierce competitive drive. Now pursuing a future in computer science, I will bring with me my leadership and competitiveness in order to further development myself as well as future companies that accept myself as an employee.</p>
+        </div>
+    </div>
+</section>
+    <section id="projects">
+        <h1 class="heading">Personal Projects</h1>
+        <div class="columns">
+            <div class="box">
+                <h2>Seattle Mariners Attendance Predictor</h2>
+                    <li> Using Python, web-scraped baseball-reference.com for yearly game-by-game statistics of Seattle Mariners home games dating back to 1994 and stored the data in a database using SQL and AWS RDS.</li> <br>
+                    <li>Developed and tested machine learning models to include a Random Forrest Regressor and Gradient Boosted Regressor based on exploratory data analysis generated using seaborn.</li> <br>
+                    <li> Deployed the best model as a user-friendly Flask app to predict the attendance of a Seattle Mariners home game using HTML and Bootstrap CSS.  Launched as a Heroku app to the web.</li> <br>
+                    <a href="https://mariners-attendance-predict.herokuapp.com/">Take Me There!</a>
+                </div>
+            <div class="box">
+                <h2>Fun Places Generator</h2>
+                    <li>Created a web application that allows users to generate a random place to go in a city of their choice</li> <br>
+                    <li>Utilized the Google Place API and the Google Geocoding API to generate data.</li> <br>
+                    <li>Built using Python, Flask, and HTML. Launched as a Heroku app to the web.</li> <br>
+                    <a href="https://random-places-generator.herokuapp.com/">Take Me There!</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="links">
+        <h1 class="heading">Links</h1>
+        <h2 class="Github">Github: <a href="https://github.com/akowalchyk">https://github.com/akowalchyk</a></h2>
+        <h2 class="Linkedin">Linkedin: <a href="https://www.linkedin.com/in/adam-kowalchyk-b774811ba/">https://www.linkedin.com/in/adam-kowalchyk-b774811ba/</a></h2>
+        <h2 class="Email">Email:<a href = "adamkowalchyk@gmail.com">adamkowalchyk@gmail.com</a></h2>
+    </section>
+</body>
+</html>
